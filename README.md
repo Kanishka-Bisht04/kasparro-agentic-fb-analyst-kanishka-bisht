@@ -1,142 +1,178 @@
-Kasparro – Agentic Facebook Performance Analyst
+Kasparro — Agentic Facebook Performance Analyst
 
-This project implements an end-to-end multi-agent pipeline to analyze Facebook Ads performance (CTR, ROAS), explain performance drops, validate insights, and generate improved creative ideas.
+An agent-based AI system to diagnose Facebook Ads performance, validate hypotheses numerically, and generate improved ad creatives.
 
--------------------------------------------------------
-1. Overview
--------------------------------------------------------
+Quick Start:
 
-The system uses the following agents:
-
-1. Planner Agent – Breaks down the user query into clear steps.
-2. Data Agent – Loads, cleans, and summarizes the dataset.
-3. Insight Agent – Generates hypotheses about ROAS/CTR changes.
-4. Evaluator Agent – Validates hypotheses using numeric checks.
-5. Creative Generator – Creates improved creative ideas.
-6. Orchestrator – Connects all agents into one pipeline.
-7. run.py – Entry point for executing the pipeline.
-
-A typical command such as:
-
-python src/run.py "Analyze ROAS drop"
-
-will produce three output files inside the reports/ folder:
-
-- insights.json
-- creatives.json
-- report.md
-
--------------------------------------------------------
-2. Project Structure
--------------------------------------------------------
-
-kasparro-agentic-fb-analyst-kanishka-bisht/
-│
-├── config/
-│   └── config.yaml
-├── data/
-│   └── sample_fb_ads.csv
-├── logs/
-├── prompts/
-│   ├── planner_prompt.md
-│   ├── data_agent_prompt.md
-│   ├── insight_prompt.md
-│   ├── evaluator_prompt.md
-│   └── creative_prompt.md
-├── reports/
-│   ├── insights.json
-│   ├── creatives.json
-│   └── report.md
-├── src/
-│   ├── agents/
-│   │   ├── planner.py
-│   │   ├── data_agent.py
-│   │   ├── insight_agent.py
-│   │   ├── evaluator.py
-│   │   └── creative_generator.py
-│   ├── orchestrator.py
-│   └── run.py
-├── tests/
-│   └── test_evaluator.py
-└── README.md
-
--------------------------------------------------------
-3. Setup Instructions
--------------------------------------------------------
-
-Step 1: Create a virtual environment
-
-python -m venv .venv
-
-Activate (Windows):
-.venv\Scripts\activate
-
-Step 2: Install dependencies
-
+python -V  # should be >= 3.10
+python -m venv .venv && source .venv/bin/activate  # win: .venv\Scripts\activate
 pip install -r requirements.txt
+python src/run.py "Analyze ROAS drop in last 7 days"
 
--------------------------------------------------------
-4. How to Run the Pipeline
--------------------------------------------------------
+Architecture:
 
-Run the full agentic pipeline using:
+User Prompt
+   ↓
+Planner Agent
+   ↓
+Data Agent → Dataset (CSV)
+   ↓
+Insight Agent
+   ↓
+Evaluator Agent
+   ↓
+Creative Agent
+   ↓
+Outputs (JSON + Markdown)
 
+Visual diagram available at:
+
+agent_graph.png
+
+
+
+Data
+
+Default sample:
+
+data/sample_fb_ads.csv
+
+
+To use real Facebook Ads export:
+
+Place full CSV:
+
+data/fb_ads_export.csv
+
+
+Set environment variable:
+
+Windows:
+
+set DATA_CSV=data/sample_fb_ads.csv
+
+
+
+Run pipeline normally.
+
+See data/README.md for schema details.
+
+Config
+
+Edit config/config.yaml:
+
+python: "3.10"
+random_seed: 42
+confidence_min: 0.7
+use_sample_data: true
+
+Repo Map
+
+src/agents/ — planner.py, data_agent.py, insight_agent.py, evaluator.py, creative_generator.py
+
+prompts/ — Agent prompt templates
+
+reports/ — report.md, insights.json, creatives.json
+
+logs/ — execution logs
+
+tests/ — test_evaluator.py
+
+agent_graph.png — visual architecture
+
+Run
+make run
+# or
 python src/run.py "Analyze ROAS drop"
 
-This will generate the following output files:
+Outputs
 
-- reports/insights.json
-- reports/creatives.json
-- reports/report.md
+Generated inside reports/:
 
--------------------------------------------------------
-5. Example Output (Plain Text)
--------------------------------------------------------
+report.md — executive summary
 
-insights.json (example):
+insights.json — validated hypotheses
 
-[
-  {
-    "hypothesis": "CTR is lower than benchmark.",
-    "validated_truth": "True",
-    "confidence": 0.78
-  }
-]
+creatives.json — improved ad concepts
 
-creatives.json (example):
+Validation Logic
 
-[
-  {
-    "campaign_name": "Campaign A",
-    "new_headline": "Experience the Difference",
-    "new_message": "Introducing a refined version of the original creative.",
-    "new_cta": "Shop Now"
-  }
-]
+Each hypothesis is verified numerically using:
 
--------------------------------------------------------
-6. Requirements
--------------------------------------------------------
+ROAS change %
 
-- Python 3.10+
-- pandas
-- pyyaml
-- json
-- openai (if LLM extensions are added)
+CTR trend
 
--------------------------------------------------------
-7. Submission Checklist
--------------------------------------------------------
+Spend shifts
 
-[ ] Correct folder structure  
-[ ] insights.json generated  
-[ ] creatives.json generated  
-[ ] report.md generated  
-[ ] README.md completed  
-[ ] Code pushed to GitHub  
-[ ] v1.0 release created  
-[ ] Submitted via Google Form
+Conversion changes
 
--------------------------------------------------------
-End of File
--------------------------------------------------------
+Evaluator output:
+
+validated: true / false
+
+confidence: float (0–1)
+
+Threshold enforcement:
+
+confidence_min = 0.7
+
+
+Insights below threshold are rejected.
+
+Run tests:
+
+pytest tests/
+
+Observability
+
+Logs stored in:
+
+logs/
+
+
+(Optional) Langfuse / trace screenshots may be placed under:
+
+reports/observability/
+
+Limitations
+
+Works on structured CSV only
+
+Requires ROAS/CTR metrics
+
+No automatic bid optimization
+
+Optional LLM integration
+
+No live publishing to Meta Ads
+
+Release
+
+✅ Tag v1.0 created
+✅ Final submission snapshot on GitHub
+
+Paste release link here:
+
+https://github.com/Kanishka-Bisht04/kasparro-agentic-fb-analyst-kanishka-bisht
+
+Self-Review
+
+Key design decisions:
+
+Agent isolation over monolith
+
+Numeric validation layer
+
+Config-driven thresholds
+
+Prompt-based extensibility
+
+Pipeline orchestration
+
+
+Author
+
+Kanishka Bisht
+Applied AI Engineer Candidate
+Kasparro Assignment

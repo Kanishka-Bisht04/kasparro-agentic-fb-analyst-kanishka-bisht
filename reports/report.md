@@ -1157,31 +1157,31 @@
 
 - **Campaign**: WOMEN Cotton Classics
   - Original: Hot & comfy: women bras now 20% off — feel the difference.
-  - New Headline: You Deserve Better: Hot
-  - New Message: Our customers asked for better, so we upgraded Hot & comfy: women bras now 20% off — feel the difference. completely.
-  - CTA: Learn More
+  - New Headline: Experience the Difference: Hot
+  - New Message: Feel the comfort of Hot & comfy: women bras now 20% off — feel the difference. like never before.
+  - CTA: Shop Now
 
 - **Campaign**: Men Bold Colors Drop
   - Original: All‑day comfort, zero pinch — try our men briefs!
   - New Headline: Why Customers Love This: All‑day
   - New Message: Say goodbye to old styles. All‑day comfort, zero pinch — try our men briefs! now comes with improved quality.
-  - CTA: Get Yours Today
+  - CTA: Shop Now
 
 - **Campaign**: Men Bold Colors Drop
   - Original: Hot & comfy: men athletic briefs now 20% off — feel the difference.
-  - New Headline: Discover a Better Way: Hot
-  - New Message: Hot & comfy: men athletic briefs now 20% off — feel the difference. just got better — perfect for everyday use.
-  - CTA: Learn More
+  - New Headline: Upgrade Your Comfort With Hot
+  - New Message: Introducing a fresh twist on Hot & comfy: men athletic briefs now 20% off — feel the difference. — designed to improve comfort and confidence.
+  - CTA: Buy Now
 
 - **Campaign**: women cotton classics
   - Original: Seamless confidence for every day — new women sports bras.
-  - New Headline: Upgrade Your Comfort With Seamless
-  - New Message: Introducing a fresh twist on Seamless confidence for every day — new women sports bras. — designed to improve comfort and confidence.
-  - CTA: Get Yours Today
+  - New Headline: You Deserve Better: Seamless
+  - New Message: Our customers asked for better, so we upgraded Seamless confidence for every day — new women sports bras. completely.
+  - CTA: Learn More
 
 - **Campaign**: Men Bold Colors Drop
   - Original: Doctors recommend breathable microfiber — meet our men inner vests.
-  - New Headline: Upgrade Your Comfort With Doctors
-  - New Message: Say goodbye to old styles. Doctors recommend breathable microfiber — meet our men inner vests. now comes with improved quality.
+  - New Headline: Discover a Better Way: Doctors
+  - New Message: Introducing a fresh twist on Doctors recommend breathable microfiber — meet our men inner vests. — designed to improve comfort and confidence.
   - CTA: Try Today
 

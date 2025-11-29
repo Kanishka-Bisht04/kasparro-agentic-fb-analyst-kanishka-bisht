@@ -3,9 +3,9 @@
         "campaign_name": "WOMEN Cotton Classics",
         "adset_name": "Adset-1 Retarget",
         "original_message": "Hot & comfy: women bras now 20% off — feel the difference.",
-        "new_headline": "You Deserve Better: Hot",
-        "new_message": "Our customers asked for better, so we upgraded Hot & comfy: women bras now 20% off — feel the difference. completely.",
-        "new_cta": "Learn More",
+        "new_headline": "Experience the Difference: Hot",
+        "new_message": "Feel the comfort of Hot & comfy: women bras now 20% off — feel the difference. like never before.",
+        "new_cta": "Shop Now",
         "ctr": 0.003
     },
     {
@@ -14,33 +14,33 @@
         "original_message": "All‑day comfort, zero pinch — try our men briefs!",
         "new_headline": "Why Customers Love This: All‑day",
         "new_message": "Say goodbye to old styles. All‑day comfort, zero pinch — try our men briefs! now comes with improved quality.",
-        "new_cta": "Get Yours Today",
+        "new_cta": "Shop Now",
         "ctr": 0.0031
     },
     {
         "campaign_name": "Men Bold Colors Drop",
         "adset_name": "Adset-4 Broad",
         "original_message": "Hot & comfy: men athletic briefs now 20% off — feel the difference.",
-        "new_headline": "Discover a Better Way: Hot",
-        "new_message": "Hot & comfy: men athletic briefs now 20% off — feel the difference. just got better — perfect for everyday use.",
-        "new_cta": "Learn More",
+        "new_headline": "Upgrade Your Comfort With Hot",
+        "new_message": "Introducing a fresh twist on Hot & comfy: men athletic briefs now 20% off — feel the difference. — designed to improve comfort and confidence.",
+        "new_cta": "Buy Now",
         "ctr": 0.0035
     },
     {
         "campaign_name": "women cotton classics",
         "adset_name": "Adset-4 LAL2",
         "original_message": "Seamless confidence for every day — new women sports bras.",
-        "new_headline": "Upgrade Your Comfort With Seamless",
-        "new_message": "Introducing a fresh twist on Seamless confidence for every day — new women sports bras. — designed to improve comfort and confidence.",
-        "new_cta": "Get Yours Today",
+        "new_headline": "You Deserve Better: Seamless",
+        "new_message": "Our customers asked for better, so we upgraded Seamless confidence for every day — new women sports bras. completely.",
+        "new_cta": "Learn More",
         "ctr": 0.0036
     },
     {
         "campaign_name": "Men Bold Colors Drop",
         "adset_name": "Adset-1 Broad",
         "original_message": "Doctors recommend breathable microfiber — meet our men inner vests.",
-        "new_headline": "Upgrade Your Comfort With Doctors",
-        "new_message": "Say goodbye to old styles. Doctors recommend breathable microfiber — meet our men inner vests. now comes with improved quality.",
+        "new_headline": "Discover a Better Way: Doctors",
+        "new_message": "Introducing a fresh twist on Doctors recommend breathable microfiber — meet our men inner vests. — designed to improve comfort and confidence.",
         "new_cta": "Try Today",
         "ctr": 0.0036
     }
